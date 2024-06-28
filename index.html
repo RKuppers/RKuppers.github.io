@@ -2,21 +2,58 @@
 layout: default
 title: Roni Küppers
 ---
-<div class="blurb">
-	<h1>Roni Küppers</h1>	
-	
-	</main></div>
-	</div>
-	<img align="right" width="200" height="222" src="images/bb.jpeg" class="about-image round " style="position: absolute; border-radius: 60%; right: 300px; top: 150px;">
-	</div>
-	</div>
-	<!-- /main -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roni Küppers</title>
+    <style>
+        .blurb {
+            max-width: 800px; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center the content horizontally */
+            padding: 20px;
+            position: relative; /* Ensure relative positioning for absolute child */
+        }
 
+        .about-image {
+            border-radius: 50%; /* Circular border for the image */
+            position: absolute;
+            top: 150px; /* Initial top position */
+        }
 
-	<p><strong>Hi!</strong></p>
-	
-	<p>I am a PhD researcher in the Department of Methodology at LSE. <br> 
-		You can check out my institutional page <a href="https://www.lse.ac.uk/Methodology/People/Research-Students/Roni-Küppers/Roni-Küppers">here</a>.</p>
-	<p>You can download my CV <a href="assets/CV_academic_24.pdf">here</a>.</p>
+        /* Media query for desktop screens */
+        @media (min-width: 768px) {
+            .about-image {
+                right: 50px; /* Adjust right position for desktop */
+                width: 200px; /* Adjust width for desktop */
+                height: 222px; /* Adjust height for desktop */
+            }
+        }
 
-</div><!-- /.blurb -->
+        /* Media query for mobile screens */
+        @media (max-width: 767px) {
+            .about-image {
+                position: static; /* Revert to normal flow on mobile */
+                display: block; /* Ensure image displays normally */
+                margin: 20px auto; /* Center image horizontally on smaller screens */
+                width: 100%; /* Make image responsive */
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blurb">
+        <h1>Roni Küppers</h1>
+        <p><strong>Hi!</strong></p>
+        <p>I am a PhD researcher in the Department of Methodology at LSE.<br>
+            You can check out my institutional page <a href="https://www.lse.ac.uk/Methodology/People/Research-Students/Roni-Küppers/Roni-Küppers">here</a>.</p>
+        <p>You can download my CV <a href="assets/CV_academic_24.pdf">here</a>.</p>
+    </div><!-- /.blurb -->
+
+    <img src="images/bb.jpeg" class="about-image round" alt="Profile Picture">
+
+</body>
+</html>
+
