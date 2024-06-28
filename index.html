@@ -14,9 +14,9 @@ title: Roni Küppers
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
             display: flex; /* Use flexbox for centering */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            height: 100vh; /* Full viewport height */
+            flex-direction: column; /* Stack items vertically */
+            min-height: 100vh; /* Full viewport height */
+            justify-content: space-between; /* Center content vertically */
             background-color: #f0f0f0; /* Example background color */
         }
 
@@ -24,6 +24,7 @@ title: Roni Küppers
             max-width: 800px; /* Adjust max-width as needed */
             padding: 20px;
             text-align: center; /* Center align text */
+            margin: auto; /* Center horizontally */
         }
 
         .about-image {
@@ -31,10 +32,17 @@ title: Roni Küppers
             width: 200px; /* Adjust width */
             height: 200px; /* Adjust height */
             margin-top: 20px; /* Add space above the image */
+            display: block; /* Ensure image displays normally */
+            margin-left: auto; /* Center horizontally */
+            margin-right: auto; /* Center horizontally */
         }
     </style>
 </head>
 <body>
+    <header>
+        <!-- Your header content here -->
+    </header>
+
     <div class="blurb">
         <h1>Roni Küppers</h1>
         <p><strong>Hi!</strong></p>
@@ -44,5 +52,10 @@ title: Roni Küppers
     </div><!-- /.blurb -->
 
     <img src="images/bb.jpeg" class="about-image round" alt="Profile Picture">
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
 </body>
 </html>
+
