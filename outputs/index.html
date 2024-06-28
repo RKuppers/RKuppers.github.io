@@ -15,21 +15,6 @@ title: Outputs
             padding-left: 0; /* Removes the default padding */
             counter-reset: item; /* Initialize the counter */
         }
-
-        /* Styles for list items */
-        ol li {
-            margin-bottom: 1em; /* Adds space between list items */
-            font-size: 1.2em; /* Increases font size of list items */
-            position: relative; /* Ensure relative positioning for custom number */
-        }
-
-        /* Pseudo-element to create custom numbering */
-        ol li::before {
-            content: counter(item) ". "; /* Adds the custom number */
-            font-weight: bold; /* Makes the number bold */
-            position: absolute;
-            left: 0;
-        }
     </style>
 </head>
 <body>
