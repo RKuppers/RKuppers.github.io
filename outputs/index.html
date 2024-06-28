@@ -20,7 +20,6 @@ title: Outputs
         ol li {
             margin-bottom: 1em; /* Adds space between list items */
             font-size: 1.2em; /* Increases font size of list items */
-            list-style-type: none; /* Removes the default number */
             counter-increment: item; /* Increment the counter */
         }
 
@@ -28,6 +27,7 @@ title: Outputs
         ol li::before {
             content: counter(item) ". "; /* Adds the custom number */
             font-weight: bold; /* Makes the number bold */
+            margin-right: 0.5em; /* Adds space between number and text */
         }
     </style>
 </head>
@@ -49,4 +49,3 @@ title: Outputs
     
 </body>
 </html>
-
