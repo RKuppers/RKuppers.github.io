@@ -10,14 +10,21 @@ title: Outputs
     <title>Outputs</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        ul {
-            list-style-type: none; /* Removes the default bullets */
+        ol {
             padding-left: 0; /* Removes the default padding */
+            counter-reset: item; /* Initialize the counter */
         }
 
-        ul li {
+        ol li {
             margin-bottom: 1em; /* Adds space between list items */
             font-size: 1.2em; /* Increases font size of list items */
+            list-style-type: none; /* Removes the default number */
+            counter-increment: item; /* Increment the counter */
+        }
+
+        ol li::before {
+            content: counter(item) ". "; /* Adds the custom number */
+            font-weight: bold; /* Makes the number bold */
         }
     </style>
 </head>
@@ -26,10 +33,10 @@ title: Outputs
 
     <h2>Peer-reviewed publications</h2>
 
-    <ul>
+    <ol>
         <li>Küppers, R. 2024. <a href="https://www.tandfonline.com/doi/full/10.1080/23254823.2024.2321905">The Far Right in Spain: an “Exception” to What? Challenging Conventions in the Study of Populism through Innovative Methodologies.</a> European Journal of Cultural and Political Sociology.</li>
         <li>Küppers, R. 2018. <a href="http://dx.doi.org/10.5209/TEKN.58511">El ágora digital: análisis de la relación entre deliberación democrática y nuevas redes digitales.</a> Teknokultura, 15(2), 415-427.</li>
-    </ul>
+    </ol>
     
 </body>
 </html>
