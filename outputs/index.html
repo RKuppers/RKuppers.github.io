@@ -10,29 +10,24 @@ title: Outputs
     <title>Outputs</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* General styles for ordered lists */
         ol {
             padding-left: 0; /* Removes the default padding */
             counter-reset: item; /* Initialize the counter */
         }
 
+        /* Styles for list items */
         ol li {
-            display: flex;
-            align-items: flex-start;
             margin-bottom: 1em; /* Adds space between list items */
             font-size: 1.2em; /* Increases font size of list items */
             list-style-type: none; /* Removes the default number */
             counter-increment: item; /* Increment the counter */
         }
 
+        /* Pseudo-element to create custom numbering */
         ol li::before {
             content: counter(item) ". "; /* Adds the custom number */
             font-weight: bold; /* Makes the number bold */
-            flex-shrink: 0; /* Prevents the number from shrinking */
-            width: 2em; /* Fixed width for the number */
-        }
-
-        ol li div {
-            flex-grow: 1; /* Allows the text to grow and wrap */
         }
     </style>
 </head>
@@ -42,8 +37,8 @@ title: Outputs
     <h2>Peer-reviewed publications</h2>
 
     <ol>
-        <li><div>Küppers, R. 2024. <a href="https://www.tandfonline.com/doi/full/10.1080/23254823.2024.2321905">The Far Right in Spain: an “Exception” to What? Challenging Conventions in the Study of Populism through Innovative Methodologies.</a> European Journal of Cultural and Political Sociology.</div></li>
-        <li><div>Küppers, R. 2018. <a href="http://dx.doi.org/10.5209/TEKN.58511">El ágora digital: análisis de la relación entre deliberación democrática y nuevas redes digitales.</a> Teknokultura, 15(2), 415-427.</div></li>
+        <li>Küppers, R. 2024. <a href="https://www.tandfonline.com/doi/full/10.1080/23254823.2024.2321905">The Far Right in Spain: an “Exception” to What? Challenging Conventions in the Study of Populism through Innovative Methodologies.</a> European Journal of Cultural and Political Sociology.</li>
+        <li>Küppers, R. 2018. <a href="http://dx.doi.org/10.5209/TEKN.58511">El ágora digital: análisis de la relación entre deliberación democrática y nuevas redes digitales.</a> Teknokultura, 15(2), 415-427.</li>
     </ol>
 
     <h2>Other publications</h2>
@@ -54,3 +49,4 @@ title: Outputs
     
 </body>
 </html>
+
