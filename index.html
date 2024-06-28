@@ -13,17 +13,17 @@ title: Roni Küppers
             font-family: Arial, sans-serif; /* Specify a fallback font-family */
             margin: 0; /* Remove default margin */
             padding: 0; /* Remove default padding */
-        }
-
-        .container {
-            max-width: 800px; /* Adjust max-width as needed */
-            margin: 0 auto; /* Center the content horizontally */
-            padding: 20px;
-            text-align: center; /* Center align text */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            background-color: #f0f0f0; /* Example background color */
         }
 
         .blurb {
-            margin-bottom: 20px; /* Add space below the blurb */
+            max-width: 800px; /* Adjust max-width as needed */
+            padding: 20px;
+            text-align: center; /* Center align text */
         }
 
         .about-image {
@@ -35,18 +35,14 @@ title: Roni Küppers
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="blurb">
-            <h1>Roni Küppers</h1>
-            <p><strong>Hi!</strong></p>
-            <p>I am a PhD researcher in the Department of Methodology at LSE.<br>
-                You can check out my institutional page <a href="https://www.lse.ac.uk/Methodology/People/Research-Students/Roni-Küppers/Roni-Küppers">here</a>.</p>
-            <p>You can download my CV <a href="assets/CV_academic_24.pdf">here</a>.</p>
-        </div><!-- /.blurb -->
+    <div class="blurb">
+        <h1>Roni Küppers</h1>
+        <p><strong>Hi!</strong></p>
+        <p>I am a PhD researcher in the Department of Methodology at LSE.<br>
+            You can check out my institutional page <a href="https://www.lse.ac.uk/Methodology/People/Research-Students/Roni-Küppers/Roni-Küppers">here</a>.</p>
+        <p>You can download my CV <a href="assets/CV_academic_24.pdf">here</a>.</p>
+    </div><!-- /.blurb -->
 
-        <img src="images/bb.jpeg" class="about-image round" alt="Profile Picture">
-    </div><!-- /.container -->
+    <img src="images/bb.jpeg" class="about-image round" alt="Profile Picture">
 </body>
 </html>
-
-
