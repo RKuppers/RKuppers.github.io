@@ -9,40 +9,41 @@ title: Roni Küppers
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roni Küppers</title>
     <style>
-        body {
-            font-family: Arial, sans-serif; /* Specify a fallback font-family */
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            display: flex; /* Use flexbox for centering */
-            flex-direction: column; /* Stack items vertically */
-            min-height: 100vh; /* Full viewport height */
-            justify-content: space-between; /* Center content vertically */
-            background-color: #f0f0f0; /* Example background color */
-        }
-
         .blurb {
             max-width: 800px; /* Adjust max-width as needed */
+            margin: 0 auto; /* Center the content horizontally */
             padding: 20px;
-            text-align: center; /* Center align text */
-            margin: auto; /* Center horizontally */
+            position: relative; /* Ensure relative positioning for absolute child */
         }
 
         .about-image {
             border-radius: 50%; /* Circular border for the image */
-            width: 200px; /* Adjust width */
-            height: 200px; /* Adjust height */
-            margin-top: 20px; /* Add space above the image */
-            display: block; /* Ensure image displays normally */
-            margin-left: auto; /* Center horizontally */
-            margin-right: auto; /* Center horizontally */
+            position: absolute;
+            top: 150px; /* Initial top position */
+        }
+
+        /* Media query for desktop screens */
+        @media (min-width: 768px) {
+            .about-image {
+                right: 50px; /* Adjust right position for desktop */
+                width: 200px; /* Adjust width for desktop */
+                height: 222px; /* Adjust height for desktop */
+            }
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 767px) {
+            .about-image {
+                position: static; /* Revert to normal flow on mobile */
+                display: block; /* Ensure image displays normally */
+                margin: 20px auto; /* Center image horizontally on smaller screens */
+                width: 100%; /* Make image responsive */
+                height: auto; /* Maintain aspect ratio */
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <!-- Your header content here -->
-    </header>
-
     <div class="blurb">
         <h1>Roni Küppers</h1>
         <p><strong>Hi!</strong></p>
@@ -55,4 +56,3 @@ title: Roni Küppers
 
 </body>
 </html>
-
