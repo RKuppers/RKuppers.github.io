@@ -54,12 +54,14 @@ ul.posts li {
 
 /* Responsive styling */
 @media (max-width: 768px) {
+    body {
+        width: 90%;
+    }
     .about-image {
         position: relative;
-        width: 100px;
-        height: 111px;
-        float: none;
-        margin: 0 auto;
+        width: 150px;
+        height: 167px;
+        margin: 20px auto;
         display: block;
     }
 
@@ -70,7 +72,7 @@ ul.posts li {
 
 @media (max-width: 480px) {
     .about-image {
-        width: 80px;
-        height: 89px;
+        width: 120px;
+        height: 133px;
     }
 }
