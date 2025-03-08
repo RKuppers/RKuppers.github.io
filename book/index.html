@@ -21,6 +21,43 @@ title: Projects
             margin-bottom: 1em; /* Adds space between list items */
             font-size: 1.5em; /* Increases font size of list items */
         }
+	    /* Styling for the image gallery */
+        .image-gallery {
+            display: flex;
+            justify-content: space-around; /* Spaces images evenly */
+            align-items: center;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            margin-top: 20px;
+        }
+
+        .image-container {
+            text-align: center; /* Centers captions */
+            width: 22%; /* Adjust width for responsiveness */
+        }
+
+        .image-container img {
+            width: 100%; /* Ensures images fill the container */
+            max-width: 200px; /* Prevents oversized images */
+            border-radius: 8px; /* Optional: Rounds corners */
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 600px) {
+            .image-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
