@@ -23,29 +23,22 @@ title: Projects
         }
 	    /* Styling for the image gallery */
         .image-gallery {
-            display: flex;
-            justify-content: space-around; /* Spaces images evenly */
-            align-items: center;
-            flex-wrap: wrap; /* Ensures responsiveness */
-            margin-top: 20px;
-        }
+    display: flex;
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images */
+    gap: 20px; /* Adds space between images */
+}
 
-        .image-container {
-            text-align: center; /* Centers captions */
-            width: 22%; /* Adjust width for responsiveness */
-        }
+.image-container {
+    text-align: center;
+    width: 100%; /* Ensures full width */
+}
 
-        .image-container img {
-            width: 100%; /* Ensures images fill the container */
-            max-width: 200px; /* Prevents oversized images */
-            border-radius: 8px; /* Optional: Rounds corners */
-        }
-
-        .caption {
-            margin-top: 8px;
-            font-size: 14px;
-            color: #555;
-        }
+.image-container img {
+    width: 80%; /* Adjust size as needed */
+    max-width: 600px; /* Prevents images from being too big */
+    height: auto; /* Maintains aspect ratio */
+}
 
         /* Responsive layout for smaller screens */
         @media (max-width: 600px) {
@@ -100,7 +93,11 @@ title: Projects
 	<div class="image-gallery">
         <div class="image-container">
             <img src="https://rkuppers.github.io/assets/Elvas5.jpg" alt="Description 1" width="650">
-            <div class="caption">Caption 1</div>
+            <div class="caption">Panoramic view of the city of Elvas, in the district of Portalegre. The dishevelled state of
+	    housing and public infrastructure stands as a reflection of a dwindling, declining rural society. In my research, I 
+	    argue bottom-up change in rural communities in Portugal is hampered by this lack of civic capital, derived from the 
+	    co-optation of civic life by partisan organisations and by the reproduction of cultural repertoires that promote social
+	    distrust.</div>
         </div>
 		  <div class="image-container">
             <img src="https://rkuppers.github.io/assets/CS6Maio.jpg" alt="Description 2">
