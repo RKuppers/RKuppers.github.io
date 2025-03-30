@@ -67,7 +67,7 @@ ul.posts li {
 
     .about-image {
         position: static;
-        width: 100px;
+        width: 111px;
         height: 111px;
         margin: 20px auto;
         display: block;
@@ -80,7 +80,7 @@ ul.posts li {
 
 @media (max-width: 480px) {
     .about-image {
-        width: 80px;
+        width: 89px;
         height: 89px;
     }
 }
