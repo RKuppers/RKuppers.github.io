@@ -51,11 +51,11 @@ ul.posts li {
 
 /* Default image styling for larger screens */
 .about-image {
-    width: 250px;
+    width: 278px;
     height: 278px;
     border-radius: 60%;
     position: absolute;
-    right: 300px;
+    right: 280px;
     top: 150px;
 }
 
