@@ -54,9 +54,8 @@ ul.posts li {
     width: 300px;
     height: 300px;
     border-radius: 70%;
-    display: block; /* Ensures it's a block element */
-    margin-left: auto; /* Pushes the image to the right inside the container */
-    margin-right: 0; /* Ensures no extra space on the right */
+    float: right; /* Aligns the image to the right */
+    margin-left: 20px; /* Adds space between the text and the image */
 }
 
 /* Responsive styling */
