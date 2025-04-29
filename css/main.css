@@ -59,17 +59,31 @@ ul.posts li {
 }
 
 /* Responsive styling */
-@media (max-width: 768px) {
-    body {
-        width: 90%;
-    }
+/* Base styling */
+body {
+    padding: 0 5%;
+    font-size: 1rem;
+}
 
+/* Image defaults */
+.about-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+
+/* Text section */
+.blurb {
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Responsive styling for tablets and below */
+@media (max-width: 768px) {
     .about-image {
-        position: static;
         width: 111px;
-        height: 111px;
         margin: 20px auto;
-        display: block;
     }
 
     .blurb {
@@ -77,9 +91,13 @@ ul.posts li {
     }
 }
 
+/* Responsive styling for small phones */
 @media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
     .about-image {
         width: 89px;
-        height: 89px;
     }
 }
