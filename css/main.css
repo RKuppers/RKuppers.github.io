@@ -61,8 +61,10 @@ ul.posts li {
 /* Responsive styling */
 /* Base styling */
 body {
-    padding: 0 5%;
+    margin: 0;
+    padding: 0 6%;
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Image defaults */
@@ -76,11 +78,15 @@ body {
 /* Text section */
 .blurb {
     text-align: left;
-    line-height: 1.6;
 }
 
-/* Responsive styling for tablets and below */
+/* Tablets and medium phones */
 @media (max-width: 768px) {
+    body {
+        padding: 0 4%;
+        font-size: 0.95rem;
+    }
+
     .about-image {
         width: 111px;
         margin: 20px auto;
@@ -91,10 +97,11 @@ body {
     }
 }
 
-/* Responsive styling for small phones */
+/* Small phones */
 @media (max-width: 480px) {
     body {
-        font-size: 0.95rem;
+        padding: 0 2%;
+        font-size: 0.88rem;
     }
 
     .about-image {
