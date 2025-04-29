@@ -9,6 +9,114 @@ title: Projects
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <style>
+/* Prevent horizontal scrolling */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden; /* Hide horizontal overflow */
+            box-sizing: border-box;
+        }
+
+        /* Ensure everything scales properly */
+        * {
+            box-sizing: inherit;
+        }
+
+        /* Main container style */
+        .container {
+            max-width: 900px; /* Constrains width */
+            margin: 40px auto; /* Centers content */
+            padding: 20px;
+            line-height: 1.6;
+            text-align: justify; /* Justifies text */
+            hyphens: auto; /* Enables automatic hyphenation */
+            width: 100%; /* Ensures container scales with screen width */
+        }
+
+        /* Media query for tablets and small screens */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;  /* Allows more width on mobile */
+                padding: 15px;   /* Reduces padding for smaller screens */
+            }
+        }
+
+        /* Media query for very small screens like phones */
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;  /* Full width on small phones */
+                padding: 10px;    /* Reduced padding */
+            }
+        }
+
+        /* Link styles */
+        a {
+            color: blue; /* Makes links blue */
+            text-decoration: none; /* Removes underline */
+        }
+
+        a:hover {
+            color: darkblue; /* Changes color when hovering */
+            text-decoration: underline; /* Adds underline on hover */
+        }
+
+        /* Styling for h1 */
+        h1 {
+            font-size: 3em;
+            font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+        }
+
+        /* Styling for paragraphs */
+        p {
+            font-size: 1.3em;
+            line-height: 1.4em;
+            color: #333;
+        }
+
+        footer {
+            border-top: 1px solid #d5d5d5;
+            font-size: .8em;
+        }
+
+        ul.posts { 
+            margin: 20px auto 40px; 
+            font-size: 1.5em;
+        }
+
+        ul.posts li {
+            list-style: none;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em; /* Adjust font size for smaller screens */
+            }
+
+            p {
+                font-size: 1.1em; /* Adjust paragraph font size for mobile */
+            }
+
+            .container {
+                padding: 15px; /* Less padding on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em; /* Further adjust h1 font size for phones */
+            }
+
+            p {
+                font-size: 1em; /* Adjust paragraph font size for small phones */
+            }
+
+            .container {
+                padding: 10px; /* Further reduced padding for very small screens */
+            }
+        }
+	
         /* General styles for ordered lists */
         ol {
             padding-left: 0; /* Removes the default padding */
@@ -20,23 +128,7 @@ title: Projects
             margin-bottom: 1em; /* Adds space between list items */
             font-size: 1.5em; /* Increases font size of list items */
         }
-        .container {
-    max-width: 800px; /* Constrains width */
-    margin: 40px auto; /* Centers content */
-    padding: 20px;
-    line-height: 1.6;
-    text-align: justify; /* Justifies text */
-    hyphens: auto; /* Enables automatic hyphenation */
-}
-	         a {
-    color: blue; /* Makes links blue */
-    text-decoration: none; /* Optional: Removes underline */
-}
 
-a:hover {
-    color: darkblue; /* Optional: Changes color when hovering */
-    text-decoration: underline; /* Optional: Adds underline on hover */
-}
 details {
     margin-top: 0.5em;
     font-size: 0.9em; /* Slightly smaller than the main text */
