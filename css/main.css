@@ -67,7 +67,7 @@ ul.posts li {
 /* ========== RESPONSIVE STYLES ========== */
 
 /* Tablets and smaller */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     body {
         max-width: 92%;
         margin: 40px auto;
