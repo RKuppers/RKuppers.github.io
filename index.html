@@ -9,12 +9,6 @@ title: Roni Küppers
     <title>Roni Küppers</title>
     <!-- Other meta tags, stylesheets, and scripts -->
     <style>
-    .container {
-        max-width: 900px; /* Adjust as needed */
-        margin: 40px auto; /* Centers the content */
-        padding: 20px;
-        line-height: 1.6;
-    }
         .container {
             max-width: 900px; /* Constrains width */
     margin: 40px auto; /* Centers content */
@@ -23,6 +17,20 @@ title: Roni Küppers
     text-align: justify; /* Justifies text */
     hyphens: auto; /* Enables automatic hyphenation */
 }
+        /* Add media query to handle mobile screens */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;  /* Allows more width on mobile */
+                padding: 15px;   /* Reduces padding for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;  /* Full width on small phones */
+                padding: 10px;    /* Reduced padding */
+            }
+        }
         a {
     color: blue; /* Makes links blue */
     text-decoration: none; /* Optional: Removes underline */
