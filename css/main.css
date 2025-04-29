@@ -95,6 +95,7 @@ footer {
     padding: 20px 0;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 10px;  /* Adds a small space beneath the footer */
 }
 
 footer ul {
