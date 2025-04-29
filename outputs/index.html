@@ -127,11 +127,23 @@ title: Outputs
 }
 
         /* Styles for list items */
-       ol li {
+        ol li {
     margin-bottom: 1em;
-    font-size: inherit; /* Inherits from surrounding text */
+    font-size: 1.3em; /* Match desktop paragraph size */
 }
 
+@media (max-width: 768px) {
+    ol li {
+        font-size: 1.1em; /* Match tablet paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    ol li {
+        font-size: 1em; /* Match phone paragraph size */
+    }
+}
+        
     </style>
 </head>
 <body>
