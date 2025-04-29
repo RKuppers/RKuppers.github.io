@@ -90,13 +90,18 @@ ul.posts li {
 /* Small phones */
 @media (max-width: 480px) {
     body {
-    max-width: 100%;
-    padding: 0 12px;
-    margin: 20px auto;
-    font-size: 0.9rem;
-}
+        width: 100%;
+        padding: 0 10%;
+        margin: 20px auto;
+        font-size: 1rem; /* Slightly larger text for readability */
+    }
 
     .about-image {
         width: 89px;
+    }
+
+    .blurb {
+        text-align: left;
+        word-wrap: break-word; /* Ensure words break if they’re too long */
     }
 }
