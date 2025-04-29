@@ -118,16 +118,28 @@ title: Projects
         }
 	
         /* General styles for ordered lists */
-        ol {
-            padding-left: 0; /* Removes the default padding */
-            counter-reset: item; /* Initialize the counter */
-        }
+     ol {
+    padding-left: 1.5em; /* Restore some space so numbers are visible */
+    counter-reset: item; /* Optional: only needed for custom counters */
+}
 
         /* Styles for list items */
         ol li {
-            margin-bottom: 1em; /* Adds space between list items */
-            font-size: 1.5em; /* Increases font size of list items */
-        }
+    margin-bottom: 1em;
+    font-size: 1.3em; /* Match desktop paragraph size */
+}
+
+@media (max-width: 768px) {
+    ol li {
+        font-size: 1.1em; /* Match tablet paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    ol li {
+        font-size: 1em; /* Match phone paragraph size */
+    }
+}
 
 details {
     margin-top: 0.5em;
