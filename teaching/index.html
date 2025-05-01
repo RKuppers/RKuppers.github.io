@@ -1,15 +1,14 @@
 ---
 layout: default
-title: Projects
+title: Roni Küppers
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Roni Küppers</title>
     <style>
-/* Prevent horizontal scrolling */
+        /* Prevent horizontal scrolling */
         html, body {
             margin: 0;
             padding: 0;
@@ -116,8 +115,23 @@ title: Projects
                 padding: 10px; /* Further reduced padding for very small screens */
             }
         }
-	
-        /* General styles for ordered lists */
+
+.about-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    float: right;
+    margin-left: 20px;
+}
+        
+/* Slightly enlarge image on phones */
+@media (max-width: 480px) {
+    .about-image {
+        max-width: 90%; /* Allow it to grow more on small screens */
+    }
+}
+
+	           /* General styles for ordered lists */
      ul {
     padding-left: 1.5em; /* Restore some space so numbers are visible */
     counter-reset: item; /* Optional: only needed for custom counters */
@@ -127,33 +141,6 @@ title: Projects
         ul li {
     margin-bottom: 1em;
     font-size: 1.3em; /* Match desktop paragraph size */
-}
-
-@media (max-width: 768px) {
-    ul li {
-        font-size: 1.1em; /* Match tablet paragraph size */
-    }
-}
-
-@media (max-width: 480px) {
-    ul li {
-        font-size: 1em; /* Match phone paragraph size */
-    }
-}
-
-details {
-    margin-top: 0.5em;
-    font-size: 0.9em; /* Slightly smaller than the main text */
-}
-
-summary {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 0.9em; /* Slightly smaller than list items */
-}
-
-details p {
-    font-size: 1em; /* Even smaller text inside the toggle */
 }
     </style>
 	<title>Teaching and supervision experience</title>
