@@ -2,13 +2,15 @@
 layout: default
 title: Teaching
 ---
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Prevent horizontal scrolling */
+ /* Prevent horizontal scrolling */
         html, body {
             margin: 0;
             padding: 0;
@@ -114,36 +116,59 @@ title: Teaching
             .container {
                 padding: 10px; /* Further reduced padding for very small screens */
             }
+        }   
+        /* General styles for ordered lists */
+        ol {
+            padding-left: 0; /* Removes the default padding */
+            counter-reset: item; /* Initialize the counter */
         }
 
-.about-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 70%;
-    float: right;
-    margin-left: 20px;
-}
-        
-/* Slightly enlarge image on phones */
-@media (max-width: 480px) {
-    .about-image {
-        max-width: 90%; /* Allow it to grow more on small screens */
-    }
-}
-
-	           /* General styles for unordered lists */
-     ul {
-    padding-left: 1.5em; /* Restore some space so numbers are visible */
-    counter-reset: item; /* Optional: only needed for custom counters */
-}
-
         /* Styles for list items */
-        ul li {
-    margin-bottom: 1em;
-    font-size: 1.3em; /* Match desktop paragraph size */
+        ol li {
+            margin-bottom: 1em; /* Adds space between list items */
+            font-size: 1.5em; /* Increases font size of list items */
+        }
+	    /* Styling for the image gallery */
+        .image-gallery {
+    display: flex;
+    flex-direction: column; /* Stacks images vertically */
+    align-items: center; /* Centers images */
+    gap: 40px; /* Adds space between image blocks */
 }
+
+.image-container {
+    text-align: center;
+    width: 100%;
+}
+
+.image-container img {
+    width: 80%; /* Adjust size as needed */
+    max-width: 600px; /* Prevents images from being too big */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.caption {
+    margin-top: 10px; /* Space between image and caption */
+    font-size: 16px;
+    color: #555;
+}
+
+.image-container:not(:last-child) {
+    margin-bottom: 30px; /* Adds space between the caption and the next image */
+}
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 600px) {
+            .image-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-container {
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
     </style>
-	<title>Teaching and supervision experience</title>
 </head>
 <body>
 <h1>Teaching</h1>
