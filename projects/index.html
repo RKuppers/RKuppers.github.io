@@ -7,10 +7,9 @@ title: Projects
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outputs</title>
     <link rel="stylesheet" href="styles.css">
     <style>
- /* Prevent horizontal scrolling */
+/* Prevent horizontal scrolling */
         html, body {
             margin: 0;
             padding: 0;
@@ -116,83 +115,46 @@ title: Projects
             .container {
                 padding: 10px; /* Further reduced padding for very small screens */
             }
-        }   
+        }
+	
         /* General styles for ordered lists */
-        ol {
-            padding-left: 0; /* Removes the default padding */
-            counter-reset: item; /* Initialize the counter */
-        }
-
-        /* Styles for list items */
-        ol li {
-            margin-bottom: 1em; /* Adds space between list items */
-            font-size: 1.5em; /* Increases font size of list items */
-        }
-	    /* Styling for the image gallery */
-        .image-gallery {
-    display: flex;
-    flex-direction: column; /* Stacks images vertically */
-    align-items: center; /* Centers images */
-    gap: 40px; /* Adds space between image blocks */
-}
-
-.image-container {
-    text-align: center;
-    width: 100%;
-}
-
-.image-container img {
-    width: 80%; /* Adjust size as needed */
-    max-width: 600px; /* Prevents images from being too big */
-    height: auto; /* Maintains aspect ratio */
-}
-
-.caption {
-    margin-top: 10px; /* Space between image and caption */
-    font-size: 16px;
-    color: #555;
-}
-
-.image-container:not(:last-child) {
-    margin-bottom: 30px; /* Adds space between the caption and the next image */
-}
-
-        /* Responsive layout for smaller screens */
-        @media (max-width: 600px) {
-            .image-gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            .image-container {
-                width: 80%;
-                margin-bottom: 15px;
-            }
-        }
-	     /* General styles for ordered lists */
-        ol {
-            padding-left: 0; /* Removes the default padding */
-            counter-reset: item; /* Initialize the counter */
-        }
-
-        /* Styles for list items */
-        ol li {
-            margin-bottom: 1em; /* Adds space between list items */
-            font-size: 1.3em; /* Increases font size of list items */
-        }
-
-	    
-	    	           /* General styles for unordered lists */
-     ul {
+     ol {
     padding-left: 1.5em; /* Restore some space so numbers are visible */
     counter-reset: item; /* Optional: only needed for custom counters */
 }
 
         /* Styles for list items */
-        ul li {
+        ol li {
     margin-bottom: 1em;
     font-size: 1.3em; /* Match desktop paragraph size */
 }
-	    
+
+@media (max-width: 768px) {
+    ol li {
+        font-size: 1.1em; /* Match tablet paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    ol li {
+        font-size: 1em; /* Match phone paragraph size */
+    }
+}
+
+details {
+    margin-top: 0.5em;
+    font-size: 0.9em; /* Slightly smaller than the main text */
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9em; /* Slightly smaller than list items */
+}
+
+details p {
+    font-size: 1em; /* Even smaller text inside the toggle */
+}
     </style>
 	<title>Work in progress</title>
 </head>
@@ -305,7 +267,8 @@ title: Projects
 	(for instance, the alt-globalisation movement or populism). But often either position is driven by an excessive privileging of inductive
 	perspectives or of deductive conceptual impositions, making it hard to feedback academic and social discourses productively. 
 		Specifically, I address this problem from two different angles:</p>
-	<ul>
+	
+		<ol>
 	<li>
 		<strong>Studying the empirical prevalence of expectations and ideas of change, revolution, utopia, etc. among ordinary citizens</strong>, and the extent to which they might correspond to or contest
 	theoretical understandings of the transformative potential of late-modern societies.
@@ -314,5 +277,8 @@ title: Projects
 		<strong>Assessing the implications, potentials, and possible downsides of the correspondence between social and academic concepts/tools for emancipation</strong>
 	(for instance, <i>gender identity)</i>.
 	</li>
+		</ol>
+	
 </body>
 </html>
+
