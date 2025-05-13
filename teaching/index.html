@@ -142,13 +142,38 @@ title: Teaching
         font-size: 1em; /* Match phone paragraph size */
     }
 }
+
+	     /* General styles for ordered lists */
+     ol {
+    padding-left: 1.5em; /* Restore some space so numbers are visible */
+    counter-reset: item; /* Optional: only needed for custom counters */
+}
+
+        /* Styles for list items */
+        ol li {
+    margin-bottom: 1em;
+    font-size: 1.3em; /* Match desktop paragraph size */
+}
+
+@media (max-width: 768px) {
+    ol li {
+        font-size: 1.1em; /* Match tablet paragraph size */
+    }
+}
+
+@media (max-width: 480px) {
+    ol li {
+        font-size: 1em; /* Match phone paragraph size */
+    }
+}
+
 	    
     </style>
 </head>
 <body>
 <h1>Teaching</h1>
 
-  <ul>
+  <ol>
   <li>
   <strong>Research Methods for Social Policy (Quantitative and Qualitative)</strong> (2023-24, 2024-25) 
 	  <br> LSE, Department of Social Policy
@@ -169,15 +194,15 @@ title: Teaching
 	  <br> EAE Business School, Department of Business
 	  <br> Lectures (full module), course administration, evaluation
   </li>
-  </ul>
+  </ol>
 
 <h1>Other experience</h1>
 
-  <ul>
+  <ol>
   <li>
   <strong>Quantitative methods adviser</strong> (2023-24, 2024-25) <br> Adviser for graduate students on their dissertations
   </li>
-  </ul>
+  </ol>
 	
 </body>
 </html>
